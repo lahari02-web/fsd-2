@@ -1,28 +1,30 @@
-console.log("JavaScript file loaded successfully!");
+// Check whether JavaScript file is connected
+console.log("selectors.js is connected!");
 
+// Add click event to button
 document.getElementById("btn").addEventListener("click", function () {
 
-    // 1. getElementById()
+    // Selecting by ID
     const title = document.getElementById("title");
     console.log("Element with ID 'title':", title);
 
-    // 2. getElementsByClassName()
+    // Selecting by Class Name
     const descriptions = document.getElementsByClassName("description");
     console.log("Elements with class 'description':", descriptions);
 
-    // 3. getElementsByTagName()
+    // Selecting by Tag Name
     const allParagraphs = document.getElementsByTagName("p");
     console.log("All <p> elements:", allParagraphs);
 
-    // 4. getElementsByName()
+    // Selecting by Name
     const buttonByName = document.getElementsByName("myButton");
     console.log("Button with name 'myButton':", buttonByName);
 
-    // 5. querySelector()
+    // Using querySelector
     const firstParagraph = document.querySelector(".description");
     console.log("First element with class 'description':", firstParagraph);
 
-    // 6. querySelectorAll()
+    // Using querySelectorAll
     const allDescriptions = document.querySelectorAll(".description");
     console.log("All elements with class 'description':", allDescriptions);
 
