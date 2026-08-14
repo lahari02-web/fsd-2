@@ -2,23 +2,28 @@ console.log("JavaScript file loaded successfully!");
 
 document.getElementById("btn").addEventListener("click", function () {
 
+    // 1. getElementById()
     const title = document.getElementById("title");
     console.log("Element with ID 'title':", title);
 
+    // 2. getElementsByClassName()
     const descriptions = document.getElementsByClassName("description");
     console.log("Elements with class 'description':", descriptions);
 
+    // 3. getElementsByTagName()
     const allParagraphs = document.getElementsByTagName("p");
     console.log("All <p> elements:", allParagraphs);
 
+    // 4. getElementsByName()
     const buttonByName = document.getElementsByName("myButton");
     console.log("Button with name 'myButton':", buttonByName);
 
+    // 5. querySelector()
     const firstParagraph = document.querySelector(".description");
     console.log("First element with class 'description':", firstParagraph);
 
+    // 6. querySelectorAll()
     const allDescriptions = document.querySelectorAll(".description");
     console.log("All elements with class 'description':", allDescriptions);
 
 });
-  
